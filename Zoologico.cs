@@ -30,6 +30,15 @@ namespace Zoo
         {
             plantas.Add(p);
         }
+
+        public void alimentar()
+        {
+            foreach (Cuidador c in cuidadores)
+            {
+                c.alimentar();
+
+            }
+        }
         public void mostrarListas()
         {
             
@@ -55,14 +64,15 @@ namespace Zoo
             Console.WriteLine();
             Console.WriteLine("------------Plantas--------------");
             Console.WriteLine();
-            Console.WriteLine("============================================");
+            
 
             foreach (Planta p in plantas)
             {
 
-                Console.WriteLine("Animal: " + p.getNombre() + ", Especie: " + p.getEspecie() + ".");
+                Console.WriteLine("Plantas: " + p.getNombre() + ", Especie: " + p.getEspecie() + ".");
             }
             Console.WriteLine();
+            Console.WriteLine("============================================");
             Console.WriteLine("--------Cuidador / Animal / Planta--------");
             Console.WriteLine();
 

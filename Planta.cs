@@ -21,10 +21,11 @@ namespace Zoo
         }
         public string getNombre()
         {
-            return "Las plantas no poseen nombre";
+            return "Sin nombre";
         }
         public void alimentarse()
         {
+            
             Console.WriteLine("Alimentandose a través de nutrientes ");
         }
     }

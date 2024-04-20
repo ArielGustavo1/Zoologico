@@ -18,7 +18,7 @@ namespace Zoo
         }
         public override void alimentarse()
         {
-            Console.WriteLine("Comiendo comida para peces");
+            Console.WriteLine(getNombre()+" Comiendo comida para peces");
         }
     }
 }

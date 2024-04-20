@@ -53,30 +53,33 @@ namespace Zoo
             Rigoberto.agregarAnimal(Margarita);
             Ruperto.agregarAnimal(Penelope);
             Ruperto.agregarAnimal(Gorifacio);
+            Arquimedes.agregarAnimal(Jacinto);
             Arquimedes.agregarAnimal(Geremias);
             Arquimedes.agregarAnimal(Hilaria);
             Eustaquio.agregarPlanta(planta1);
             Eustaquio.agregarPlanta(planta2);
             Eustaquio.agregarPlanta(planta3);
 
-            //zoologico.agregarCuidador(Rigoberto);
-            //zoologico.agregarCuidador(Ruperto);
-            //zoologico.agregarCuidador(Arquimedes);
-            //zoologico.agregarCuidador(Eustaquio);
-            //zoologico.agregarAnimal(Eugenio);
-            //zoologico.agregarAnimal(Hermione);
-            //zoologico.agregarAnimal(Margarita);
-            //zoologico.agregarAnimal(Penelope);
-            //zoologico.agregarAnimal(Gorifacio);
-            //zoologico.agregarAnimal(Jacinto);
-            //zoologico.agregarAnimal(Geremias);
-            //zoologico.agregarAnimal(Hilaria);
+            zoologico.agregarCuidador(Rigoberto);
+            zoologico.agregarCuidador(Ruperto);
+            zoologico.agregarCuidador(Arquimedes);
+            zoologico.agregarCuidador(Eustaquio);
+
+            zoologico.agregarAnimal(Eugenio);
+            zoologico.agregarAnimal(Margarita);
+            zoologico.agregarAnimal(Penelope);
+            zoologico.agregarAnimal(Gorifacio);
+            zoologico.agregarAnimal(Jacinto);
+            zoologico.agregarAnimal(Geremias);
+            zoologico.agregarAnimal(Hilaria);
+            zoologico.agregarPlanta(planta1);
+            zoologico.agregarPlanta(planta2);
+            zoologico.agregarPlanta(planta3);
 
 
+            //zoologico.mostrarListas();
 
-            zoologico.mostrarListas();
-
-
+            zoologico.alimentar();
 
 
         }

@@ -18,9 +18,29 @@ namespace Zoo
             animales = new List<Animal>();
             plantas = new List<Planta>();
         }
-        public void alimentarAnimal()
+        public void alimentar()
         {
-            Console.WriteLine("Alimentando al animal");
+           
+            Console.WriteLine();
+            Console.WriteLine(nombre+" alimentando: ");
+            Console.WriteLine();
+
+            foreach (Animal a in animales)
+            {
+                a.getNombre();
+                a.getEspecie();
+                a.alimentarse();
+                Console.WriteLine();
+            }
+            foreach (Planta p in plantas)
+            {
+               
+                p.getEspecie();
+                p.alimentarse();
+                Console.WriteLine();
+
+            }
+            Console.WriteLine();
         }
         public void agregarAnimal(Animal a)
         {
@@ -35,6 +55,10 @@ namespace Zoo
             foreach (Animal a in animales)
             {
                 Console.WriteLine("         Animal: " + a.getNombre() + ", "+a.getEspecie()+".");
+            }
+            foreach (Planta p in plantas)
+            {
+                Console.WriteLine("         Planta: " + p.getNombre() + ", " + p.getEspecie() + ".");
             }
 
         }
