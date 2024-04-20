@@ -39,6 +39,18 @@ namespace Zoo
 
             }
         }
+        public void accion()
+        {
+            Console.WriteLine();
+            foreach (Animal a in animales)
+            {
+
+                Console.Write(a.getNombre() +" ");
+                a.accion();
+                Console.WriteLine();
+            }
+            Console.WriteLine("\n");
+        }
         public void mostrarListas()
         {
             
@@ -73,6 +85,7 @@ namespace Zoo
             }
             Console.WriteLine();
             Console.WriteLine("============================================");
+            Console.WriteLine();
             Console.WriteLine("--------Cuidador / Animal / Planta--------");
             Console.WriteLine();
 

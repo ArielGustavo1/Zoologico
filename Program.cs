@@ -37,7 +37,7 @@ namespace Zoo
             Cuidador Arquimedes = new Cuidador("Arquímedes");
             Cuidador Eustaquio = new Cuidador("Eustaquio");
 
-            Animal Eugenio = new Mamifero("Eugenio", "Rinoceronte");
+            Animal Zenaida = new Mamifero("Zenaida", "Rinoceronte");
             Animal Margarita = new Mamifero("Margarita", "Leona");
             Animal Penelope = new Mamifero("Penélope", "Jirafa");
             Animal Gorifacio = new Ave("Gorifacio", "Cisne");
@@ -49,7 +49,7 @@ namespace Zoo
             Planta planta3 = new Planta("Hiedra");
 
 
-            Rigoberto.agregarAnimal(Eugenio);
+            Rigoberto.agregarAnimal(Zenaida);
             Rigoberto.agregarAnimal(Margarita);
             Ruperto.agregarAnimal(Penelope);
             Ruperto.agregarAnimal(Gorifacio);
@@ -65,7 +65,7 @@ namespace Zoo
             zoologico.agregarCuidador(Arquimedes);
             zoologico.agregarCuidador(Eustaquio);
 
-            zoologico.agregarAnimal(Eugenio);
+            zoologico.agregarAnimal(Zenaida);
             zoologico.agregarAnimal(Margarita);
             zoologico.agregarAnimal(Penelope);
             zoologico.agregarAnimal(Gorifacio);
@@ -76,11 +76,12 @@ namespace Zoo
             zoologico.agregarPlanta(planta2);
             zoologico.agregarPlanta(planta3);
 
-
-            //zoologico.mostrarListas();
-
+            Console.WriteLine("================Lista del Zoo=================\n");
+            zoologico.mostrarListas();
+            Console.WriteLine("=================Alimentando=================");
             zoologico.alimentar();
-
+            Console.WriteLine("===================Accion===================");
+            zoologico.accion();
 
         }
     }

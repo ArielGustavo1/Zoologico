@@ -27,6 +27,7 @@ namespace Zoo
 
             foreach (Animal a in animales)
             {
+                Console.Write("     ");
                 a.getNombre();
                 a.getEspecie();
                 a.alimentarse();
@@ -34,7 +35,7 @@ namespace Zoo
             }
             foreach (Planta p in plantas)
             {
-               
+                Console.Write("     ");
                 p.getEspecie();
                 p.alimentarse();
                 Console.WriteLine();
