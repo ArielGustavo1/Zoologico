@@ -44,7 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal.cs" />
+    <Compile Include="Ave.cs" />
     <Compile Include="Cuidador.cs" />
+    <Compile Include="Planta.cs" />
+    <Compile Include="Mamifero.cs" />
+    <Compile Include="Pez.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Zoologico.cs" />

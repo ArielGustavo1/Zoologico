@@ -11,11 +11,12 @@ namespace Zoo
         //
         private string nombre; 
         private List<Animal> animales;
-
+        private List<Planta> plantas;
         public Cuidador(string nombre)
         {
             this.nombre = nombre;
             animales = new List<Animal>();
+            plantas = new List<Planta>();
         }
         public void alimentarAnimal()
         {
@@ -24,6 +25,10 @@ namespace Zoo
         public void agregarAnimal(Animal a)
         {
             animales.Add(a);
+        }
+        public void agregarPlanta(Planta p)
+        {
+            plantas.Add(p);
         }
         public void mostrarListas()
         {

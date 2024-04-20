@@ -30,5 +30,14 @@ namespace Zoo
             return especie;
         }
 
+        public virtual void alimentarse()
+        {
+            Console.WriteLine("Se alimenta en forma genérica");
+        }
+        public virtual void accion()
+        {
+            Console.WriteLine("Acción genérica del animal");
+        }
+
     }
 }

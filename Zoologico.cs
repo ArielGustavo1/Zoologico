@@ -10,12 +10,12 @@ namespace Zoo
     {
         private List<Animal> animales;
         private List<Cuidador> cuidadores;
-
+        private List<Planta> plantas;
         public Zoologico() 
         { 
             animales = new List<Animal>();
             cuidadores = new List<Cuidador>();
-
+            plantas = new List<Planta>();
         
         }
         public void agregarAnimal(Animal a)
@@ -25,6 +25,10 @@ namespace Zoo
         public void agregarCuidador(Cuidador c)
         {
             cuidadores.Add(c);
+        }
+        public void agregarPlanta(Planta p)
+        {
+            plantas.Add(p);
         }
         public void mostrarListas()
         {
@@ -47,8 +51,19 @@ namespace Zoo
                 Console.WriteLine("Animal: " + a.getNombre() + ", Especie: " + a.getEspecie()+".");
             }
 
+            
             Console.WriteLine();
-            Console.WriteLine("--------Cuidador / Animal--------");
+            Console.WriteLine("------------Plantas--------------");
+            Console.WriteLine();
+            Console.WriteLine("============================================");
+
+            foreach (Planta p in plantas)
+            {
+
+                Console.WriteLine("Animal: " + p.getNombre() + ", Especie: " + p.getEspecie() + ".");
+            }
+            Console.WriteLine();
+            Console.WriteLine("--------Cuidador / Animal / Planta--------");
             Console.WriteLine();
 
             foreach (Cuidador c in cuidadores)
@@ -60,7 +75,6 @@ namespace Zoo
             }
             Console.WriteLine();
             Console.WriteLine();
-
         }
 
 
